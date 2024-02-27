@@ -1,0 +1,103 @@
+* {
+    box-sizing: border-box;
+}
+html {
+    font-size: 62.5%;
+}
+body {
+    font-family: "Open Sans", sans-serif;
+    font-size: 1.6rem;
+}
+a {
+    text-decoration: none;
+}
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-image: url(https://wallpapercave.com/wp/wp10206642.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.wrapper__item {
+    width: 400px;
+    padding: 20px;
+    background-color: transparent;
+    border: 2px solid #ccc;
+    border-radius: 20px;
+    backdrop-filter: blur(5px);
+}
+.title {
+    font-size: 3.6rem;
+    text-align: center;
+}
+.input__box {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+}
+.input__fill {
+    border-radius: 40px;
+    border: none;
+    outline: none;
+    border: 1px solid black;
+    background: transparent;
+    height: 30px;
+    margin-top: 10px;
+    font-family: "Open Sans", sans-serif;
+    padding-left: 12px;
+    font-size: 1.6rem;
+}
+.remember {
+    margin-top: 20px;
+    display: flex;
+}
+.btn__submit {
+    margin-top: 20px;
+    display: block;
+    font-family: "Open Sans", sans-serif;
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px solid black;
+    outline: none;
+    border-radius: 40px;
+    width: 50%;
+    height: 100%;
+    font-size: 2.0rem;
+    padding: 10px;
+}
+.login{
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+.login__box {
+    display: flex;
+}
+.active {
+    display: inline-block;
+    color: red;
+    margin-left: 3px;
+    cursor: pointer;
+}
+.wrapper__register {
+    position: fixed;
+    top : 50%;
+    transform: translateY(-50%);
+    visibility: hidden;
+    opacity: 1;
+}
+.return {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+}
+.checkbox__item:checked ~ .wrapper__register{
+    opacity: 1;
+    visibility: visible;
+}
+.checkbox__item:checked ~ .wrapper__login{
+    opacity: 0;
+}
+

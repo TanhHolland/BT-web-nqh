@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <link rel="stylesheet" href="./assets/css/reset.css" />
+        <link rel="stylesheet" href="./assets/css/style_register.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+            rel="stylesheet"
+        />
+    </head>
+    <body>
+        <main>
+            <div class="wrapper">
+                <input type="checkbox" name="checkbox" id="checkbox__item" class="checkbox__item" hidden>
+                <div class="wrapper__item wrapper__login">
+                    <form action="" method="get" class="form-fill">
+                        <h2 class="title">Đăng nhập</h2>
+                        <div class="input__box">
+                            <label for="username">Tên đăng nhập :</label>
+                            <input type="text" name="username" id="username" class="input__fill" />
+                        </div>
+                        <div class="input__box">
+                            <label for="password">Mật Khẩu :</label>
+                            <input type="text" name="password" id="password" class="input__fill" />
+                        </div>
+                        <div class="remember">
+                            <input type="checkbox" name="remember" id="remember">
+                            <label for="remember">Ghi nhớ mật khẩu</label>
+                        </div>
+                        <button type="submit" class="btn__submit">Đăng nhập</button>
+                        <div class="login">
+                            <div class="login__box">
+                                <p class="remember__desc">Bạn quên mật khẩu?</p>
+                                <label for="checkbox__item" class="login__link active">Đăng ký</label>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="wrapper__item wrapper__register">
+                    <form action="" method="get" class="form-register">
+                        <h2 class="title">Đăng Ký</h2>
+                        <div class="input__box">
+                            <label for="username">Tên người dùng :</label>
+                            <input type="text" name="username" id="username" class="input__fill" />
+                        </div>
+                        <div class="input__box">
+                            <label for="password">Email :</label>
+                            <input type="text" name="password" id="password" class="input__fill" />
+                        </div>
+                        <div class="input__box">
+                            <label for="password">Mật khẩu :</label>
+                            <input type="text" name="password" id="password" class="input__fill" />
+                        </div>
+                        <div class="input__box">
+                            <label for="password">Xác nhận mật khẩu :</label>
+                            <input type="text" name="password" id="password" class="input__fill" />
+                        </div>
+                        <button type="submit" class="btn__submit">Đăng ký</button>
+                        <div class="return">
+                            <label for="checkbox__item" class="return-link active">Quay lại</label>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </main>
+    </body>
+</html>

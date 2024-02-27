@@ -1,0 +1,13 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    font-size: 62.5%;
+}
+html {
+    font-family: "Open Sans", sans-serif;
+    font-size: 1.6rem;
+}
+a {
+    text-decoration: none;
+}
