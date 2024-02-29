@@ -96,7 +96,7 @@ body {
     top : 50%;
     transform: translateY(-50%);
     visibility: hidden;
-    opacity: 1;
+    opacity: 0;
 }
 .return {
     margin-top: 30px;
@@ -109,4 +109,5 @@ body {
 }
 .checkbox__item:checked ~ .wrapper__login{
     opacity: 0;
+    visibility: hidden;
 }

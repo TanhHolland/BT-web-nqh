@@ -23,6 +23,7 @@
                     class="checkbox__item"
                     hidden
                 />
+                <!-- Form 1 -->
                 <div class="wrapper__item wrapper__login">
                     <form
                         action=""
@@ -30,7 +31,7 @@
                         id="form-fill"
                         class="form-fill"
                         name="form-login"
-                        onsubmit="return validateForm()"
+                        onsubmit="return validateLogin()"
                     >
                         <h2 class="title">Đăng nhập</h2>
                         <div class="input__box">
@@ -41,7 +42,14 @@
                                 id="username"
                                 class="input__fill"
                             />
-                            <span id="username__error" style="color: red; margin-top:5px; font-size : 1.4rem"></span>
+                            <span
+                                id="username__error"
+                                style="
+                                    color: red;
+                                    margin-top: 5px;
+                                    font-size: 1.4rem;
+                                "
+                            ></span>
                         </div>
                         <div class="input__box">
                             <label for="password">Mật Khẩu :</label>
@@ -51,7 +59,14 @@
                                 id="password"
                                 class="input__fill"
                             />
-                            <span id="password__error" style="color: red; margin-top:5px; font-size : 1.4rem"></span>
+                            <span
+                                id="password__error"
+                                style="
+                                    color: red;
+                                    margin-top: 5px;
+                                    font-size: 1.4rem;
+                                "
+                            ></span>
                         </div>
                         <div class="remember">
                             <input
@@ -77,8 +92,9 @@
                         </div>
                     </form>
                 </div>
+                <!-- Form 2 -->
                 <div class="wrapper__item wrapper__register">
-                    <form action="" method="get" class="form-register">
+                    <form action="" method="get" name="form-register" class="form-register" onsubmit="return validateSignup()">
                         <h2 class="title">Đăng Ký</h2>
                         <div class="input__box">
                             <label for="username">Tên người dùng :</label>
@@ -88,33 +104,65 @@
                                 id="username"
                                 class="input__fill"
                             />
+                            <span
+                                id="username__error"
+                                style="
+                                    color: red;
+                                    margin-top: 5px;
+                                    font-size: 1.4rem;
+                                "
+                            ></span>
                         </div>
                         <div class="input__box">
-                            <label for="password">Email :</label>
+                            <label for="email">Email :</label>
                             <input
                                 type="text"
-                                name="password"
-                                id="password"
+                                name="email"
+                                id="email"
                                 class="input__fill"
                             />
+                            <span
+                                id="email__error"
+                                style="
+                                    color: red;
+                                    margin-top: 5px;
+                                    font-size: 1.4rem;
+                                "
+                            ></span>
                         </div>
                         <div class="input__box">
                             <label for="password">Mật khẩu :</label>
                             <input
-                                type="text"
+                                type="password"
                                 name="password"
                                 id="password"
                                 class="input__fill"
                             />
+                            <span
+                                id="password__error"
+                                style="
+                                    color: red;
+                                    margin-top: 5px;
+                                    font-size: 1.4rem;
+                                "
+                            ></span>
                         </div>
                         <div class="input__box">
-                            <label for="password">Xác nhận mật khẩu :</label>
+                            <label for="password-checked">Xác nhận mật khẩu :</label>
                             <input
-                                type="text"
-                                name="password"
-                                id="password"
+                                type="password"
+                                name="password-checked"
+                                id="password-checked"
                                 class="input__fill"
                             />
+                            <span
+                                id="password__error-checked"
+                                style="
+                                    color: red;
+                                    margin-top: 5px;
+                                    font-size: 1.4rem;
+                                "
+                            ></span>
                         </div>
                         <button type="submit" class="btn__submit">
                             Đăng ký

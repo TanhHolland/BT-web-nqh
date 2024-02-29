@@ -1,6 +1,6 @@
 {
     "User": [
-      { "id": "1", "username": "tuananh123", "password": "123456" },
-      { "id": "2", "username": "nhamdanccc", "password": "nhamcodon" }
+      { "id": "1", "username": "tuananh123", "password": "123456","email" :"nhoklilom2.0@gmail.com" },
+      { "id": "2", "username": "nhamdanccc", "password": "nhamcodon","email" :"nhoklilom2.0@gmail.com" }
     ]
 }
