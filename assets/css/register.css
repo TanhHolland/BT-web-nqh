@@ -53,6 +53,13 @@ body {
     margin-top: 20px;
     display: flex;
 }
+.account__error {
+    display: block;
+    color: red;
+    font-size: 1.8rem;
+    margin-top: 10px;
+    text-align: center;
+}
 .btn__submit {
     margin-top: 20px;
     display: block;
@@ -66,6 +73,9 @@ body {
     height: 100%;
     font-size: 2.0rem;
     padding: 10px;
+}
+.btn__submit:hover {
+    cursor: pointer;
 }
 .login{
     margin-top: 20px;
@@ -100,4 +110,3 @@ body {
 .checkbox__item:checked ~ .wrapper__login{
     opacity: 0;
 }
-
